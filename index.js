@@ -3,7 +3,7 @@
  */
 
  import { NativeModules } from 'react-native';
- const { RNHiveSDKLibrary } = NativeModules;
+ const { RNHiveSDKLibrary } = NativeModules.RNHiveSDKLibraryModule;
 
 export {
   RNHiveSDKLibrary,

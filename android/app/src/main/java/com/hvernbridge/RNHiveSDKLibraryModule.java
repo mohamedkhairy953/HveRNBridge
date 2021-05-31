@@ -1,6 +1,7 @@
 package com.hvernbridge;
 
 import android.util.Log;
+import android.widget.Toast;
 
 import com.facebook.react.bridge.Promise;
 import com.facebook.react.bridge.ReactApplicationContext;
@@ -38,8 +39,12 @@ public class RNHiveSDKLibraryModule extends ReactContextBaseJavaModule {
             JSONObject details = new JSONObject(arguments);
             String userName = details.optString("userName");
             String password = details.optString("password");
-            SurveyActivity.startSurvey(reactContext.getCurrentActivity(), userName, password);
-        } catch (Exception e) {
+            if (reactContext.getCurrentActivity() != null)
+                Toast.makeText(reactContext,"dd",Toast.LENGTH_SHORT).show();
+               // SurveyActivity.startSurvey(reactContext.getCurrentActivity(), "userName", "password");
+        Toast.makeText(reactContext,"ddfff",Toast.LENGTH_SHORT).show();
+
+            } catch (Exception e) {
             promise.reject("Error", e.getMessage(), new Throwable(e.getMessage()));
         }
     }
