@@ -1,5 +1,5 @@
 {
-  "name": "HveRNBridge",
+  "name": "hive_sdk_bridge",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -25,5 +25,20 @@
   },
   "jest": {
     "preset": "react-native"
-  }
+  },
+  "description": "bridge library for the native hive sdk",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohamedkhairy953/HveRNBridge.git"
+  },
+  "keywords": [
+    "hive"
+  ],
+  "author": "ist",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mohamedkhairy953/HveRNBridge/issues"
+  },
+  "homepage": "https://github.com/mohamedkhairy953/HveRNBridge#readme"
 }
