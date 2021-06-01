@@ -14,7 +14,7 @@ import org.json.JSONObject;
 public class RNHiveSDKLibraryModule extends ReactContextBaseJavaModule {
 
     private final ReactApplicationContext reactContext;
-    private static String hiveSDK_MODULE = "RNHiveSDKLibraryModule";
+    private static String hiveSDK_MODULE = "RNHiveSDKLibrary";
     private Promise promise;
 
     public RNHiveSDKLibraryModule(ReactApplicationContext reactContext) {

@@ -1,11 +1,2 @@
-/**
- * @format
- */
-
- import { NativeModules } from 'react-native';
- const { RNHiveSDKLibrary } = NativeModules.RNHiveSDKLibraryModule;
-
-export {
-  RNHiveSDKLibrary,
-};
-
+import { NativeModules } from 'react-native';
+module.exports=NativeModules.RNHiveSDKLibraryModule
